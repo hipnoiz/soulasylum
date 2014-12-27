@@ -69,12 +69,12 @@ h1,h2,h3{
 
 #soul img{
 	display: inline-block;
-	height: 100vh;
+	height: 100%vh;
 }
 
 #menu{
 	font-family: 'Quando', serif;
-	font-size: 26px;
+	font-size: 27px;
 	text-align: center;
 
 }
