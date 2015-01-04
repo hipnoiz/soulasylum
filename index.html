@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html ng-app="soulAsylum">
 <head>
 	<meta charset="UTF-8">
 	<title>Soul Asylum</title>
@@ -7,54 +7,53 @@
 	<link href='http://fonts.googleapis.com/css?family=Judson' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
+	<!--Czary Mary-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<script src="js/app.js"></script>
+	
 	<link rel="stylesheet" href="css/style.css">
 	<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
-	<script src="js/script.js"></script>
+	<script src="js/gplus-youtubeembed.js"></script>
 </head>
-<body>	
+<body ng-controller="mainController">
 	<div id="header">
 		<div class="container">
 			<div id="soul">
-				<img src="images/soul2.png" alt="">
+				<img src="images/soul3.png" alt="">
 			</div>
 			<div id="menu">
 				<ul class="cl-effect-4">
-					<li><a href="index.html">About us</a></li>
-					<li><a href="#">Artists</a></li>
-					<li><a href="#">Releases</a></li>
-					<li><a href="#">Videos</a></li>
-					<li><a href="#">Events</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#artists">Artists</a></li>
+					<li><a href="#releases">Releases</a></li>
+					<li><a href="#videos">Videos</a></li>
+					<li><a href="#events">Events</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div class="content" id="about">
+	<div class="content" id="main">
 		<div class="container">
-			<h1>Who we are</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cum dolorem deleniti recusandae, natus, numquam provident voluptate id accusamus perspiciatis nihil atque praesentium repellat porro officiis dignissimos temporibus, quos consequuntur.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat necessitatibus vitae quo dolorum minus? Itaque, neque, nisi unde possimus quo recusandae placeat. Laborum consequuntur molestiae, natus qui pariatur officiis obcaecati.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius cum possimus aperiam quis voluptatibus. Neque, ut incidunt rem. Iusto esse porro eos sunt distinctio deleniti eaque beatae ducimus magni delectus.</p>
-			<h1>Where we come from</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cum dolorem deleniti recusandae, natus, numquam provident voluptate id accusamus perspiciatis nihil atque praesentium repellat porro officiis dignissimos temporibus, quos consequuntur.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat necessitatibus vitae quo dolorum minus? Itaque, neque, nisi unde possimus quo recusandae placeat. Laborum consequuntur molestiae, natus qui pariatur officiis obcaecati.
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius cum possimus aperiam quis voluptatibus. Neque, ut incidunt rem. Iusto esse porro eos sunt distinctio deleniti eaque beatae ducimus magni delectus.</p>
-			<h1>Music</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cum dolorem deleniti recusandae, natus, numquam provident voluptate id accusamus perspiciatis nihil atque praesentium repellat porro officiis dignissimos temporibus, quos consequuntur.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat necessitatibus vitae quo dolorum minus? Itaque, neque, nisi unde possimus quo recusandae placeat. Laborum consequuntur molestiae, natus qui pariatur officiis obcaecati.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius cum possimus aperiam quis voluptatibus. Neque, ut incidunt rem. Iusto esse porro eos sunt distinctio deleniti eaque beatae ducimus magni delectus.</p>
-		</div>
-	</div>
-	<div id="footer">
-		<div class="container">
-			<div id="top-foot">
-				<p><a href="https://soundcloud.com/soulasylumrecords">SoundCloud</a></p>
-				<p>2015</p>
-			</div>
-			<div id="low-foot">
-				<span>Available at: Beatport, iTunes, Bleep, Juno, BOOMKAT, Kompakt, Forced Exposure, Zero Inch, Rough Trade and all good music retailers.</span>
+			<div ng-view>
+			
 			</div>
 		</div>
 	</div>
+			<div id="footer">
+				<div class="container">
+					<div id="top-foot">
+						<p><a href="https://soundcloud.com/soulasylumrecords">SoundCloud</a></p>
+						<p>2015</p>
+					</div>
+					<div id="low-foot">
+						<span>Available at: Beatport, iTunes, Bleep, Juno, BOOMKAT, Kompakt, Forced Exposure, Zero Inch, Rough Trade and all good music retailers.</span>
+					</div>
+				</div>
+			</div>
+	
 </body>
+
 </html>
