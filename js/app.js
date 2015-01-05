@@ -30,7 +30,7 @@ app.config(function($routeProvider){
     });
 });
 
-//controller
+//controllers
 app.controller('mainController', function($scope){
   
 });
@@ -41,6 +41,13 @@ app.controller('artistsController', function($scope){
 
 app.controller('contactController', function($scope){
   
+});
+
+app.controller('releasesController', function($scope, $http){
+  $http.get('releases.json')
+       .then(function(res){
+          $scope.releases = res.data;
+        });  
 });
 
 app.controller('videosController', function($scope){
